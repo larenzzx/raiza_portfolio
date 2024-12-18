@@ -218,6 +218,10 @@ span {
 }
 
 @media screen and (max-width: 480px) {
+    main {
+        margin-top: 8em;
+    }
+    
     .title {
         font-size: var(--size-7xl);
     }
