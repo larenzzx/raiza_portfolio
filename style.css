@@ -55,15 +55,18 @@ body {
 }
 
 header {
-    /* background-color: red; */
-    display: flex;
-    justify-content: flex-end;
-    gap: 1em;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     padding: 3em;
+}
+
+header nav {
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
 }
 
 h1, p, i, h3 {
@@ -98,10 +101,8 @@ a.about {
 
 
 main {
-    /* background-color: red; */
     display: grid;
     place-items: center;
-    /* padding-top: 1em; */
 }
 
 .info {
@@ -140,4 +141,164 @@ span {
     color: white;
     bottom: 0;
     padding-bottom: 1em;
+}
+
+.menu {
+    display: none;  
+}
+
+.menu_link {
+    display: none;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 1232px) {
+    
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: var(--size-10xl);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: var(--size-9xl);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: var(--size-8xl);
+    }
+
+    main {
+        margin-top: 5em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .con, .socmed {
+        text-align: center;
+        width: 100%;
+    }
+
+    .con {
+        margin-top: 5em;
+    }
+
+    .socmed {
+        margin-top: 3em;
+    }
+
+    .wrapper {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .social {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: var(--size-7xl);
+    }
+
+    .head {
+        display: none;
+    }
+
+    .con {
+        margin-top: 7em;
+    }
+
+    .menu {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+    }
+
+    .menu_link {
+        background-color: white;
+        position: absolute;
+        position: fixed;
+        /* top: 50%; */
+        /* left: 50%; */
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        /* transform: translate(-50%, -50%); */
+        padding: 10em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+        width: 85%;
+        z-index: 999;
+        display: none;
+
+        a {
+            background-color: black;
+            color: white;
+        }
+
+        
+    }
+
+    .menu_link::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 99%;
+        border: 25px solid;
+        border-color: #0000 white white #0000;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .title {
+        font-size: var(--size-5xl);
+    }
+
+    .info {
+        p, i {
+            /* color: red; */
+            font-size: var(--size-xs);
+        }
+
+    }
+
+    .menu_link {
+        width: 80%;
+    }
+
+    .con {
+        margin-top: 10em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu_link {
+        padding: 8em;
+    }
 }
