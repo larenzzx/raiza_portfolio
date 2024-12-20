@@ -59,6 +59,19 @@ body {
 }
 
 
+.backBtn {
+    color: var(--fontColor);
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #000;
+    }
+}
+
 
 
 /* responsive */

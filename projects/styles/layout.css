@@ -1,0 +1,99 @@
+body {
+    background-color: var(--background);
+}
+
+h3 {
+    color: var(--fontColor);
+    font-size: var(--size-4xl);
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.container {
+    padding-inline: 5em;
+    margin-top: 2em;
+}
+
+
+/* LAYOUT DESIGN AND GRAPHIC DESIGN STYLE */
+.poster {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    .poster__img {
+        /* width: 100%; */
+        width: 500px;
+    }
+
+    .graphic__img {
+        width: 350px;
+    }
+
+    .poster__title {
+        color: var(--fontColor);
+        font-size: var(--size-2xl);
+    }
+}
+
+.layouts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-bottom: 3em;
+
+    .brochure__img {
+        width: 400px;
+    }
+
+    .advocacy__img {
+        width: 500px;
+    }
+
+    .brochure__title,
+    .advocacy__title {
+        color: var(--fontColor);
+        font-size: var(--size-xl);
+        text-align: center;
+        margin-top: 1em;
+    }
+}
+
+/* LOGO DESIGN, MERCH DESIGN, VISUAL BRANDING STYLE*/
+
+.logo {
+    margin-bottom: 5em;
+}
+
+.logo__img {
+    /* width: 600px; */
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+}
+
+.visual__img {
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+}
+
+/* PHOTOGRAPHY DESIGN STYLE */
+.photo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 2em;
+}
+
+.photo__img {
+    width: 100%;
+}
+
+.photo__img:nth-child(1),
+.photo__img:nth-child(3) {
+    /* width: 400px; */
+    height: 300px;
+    object-fit: cover;
+}
