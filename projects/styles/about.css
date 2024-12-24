@@ -50,25 +50,11 @@ h1, p, h2 {
 }
 
 .hero__img {
-    /* border: 1px solid red; */
-    position: relative;
 
     img {
         /* width: 100%; */
         max-width: 500px;
         height: 525.9px;
-    }
-
-    .mainPic {
-        /* z-index: 999; */
-    }
-
-    .opacityPic {
-        position: absolute;
-        bottom: 5px;
-        left: 80px;
-        /* left: 5px; */
-        /* right: 20px; */
     }
 }
 
@@ -127,4 +113,273 @@ h1, p, h2 {
         grid-column: span 3;
     }
 
+}
+
+
+/* responsive */
+@media screen and (max-width: 1232px) {
+    
+}
+
+@media screen and (max-width: 1200px) {
+   
+}
+
+@media screen and (max-width: 1130px) {
+    .hero__text {
+        h1 {
+            font-size: var(--size-8xl);
+        }
+    }
+
+    .project__text {
+        h2 {
+            font-size: var(--size-6xl);
+        }
+    }
+
+}
+
+@media screen and (max-width: 1035px) {
+    .hero__text {
+        margin-top: 2em;
+
+        h1 {
+            font-size: var(--size-7xl);
+        }
+    }
+
+    .project__text {
+        h2 {
+            font-size: var(--size-5xl);
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .hero {
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+        grid-template-areas: 
+        'img'
+        'text';
+    }
+
+    .hero__container {
+        grid-area: text;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .hero__img {
+        margin-left: 5em;
+        grid-area: img;
+    }
+
+    .hero__text {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .project__list {
+        grid-template-columns: repeat(2, 1fr);
+        
+        li a {
+            font-size: var(--size-lg);
+        }
+    
+        li:nth-child(7) {
+            grid-column: span 2;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__img {
+
+        img {
+            /* width: 100%; */
+            max-width: 400px;
+            height: 425.9px;
+        }
+    }
+
+    .hero__text {
+
+        h1 {
+            font-size: var(--size-6xl);
+        }
+    }
+
+    .project__list {
+        grid-template-columns: repeat(2, 1fr);
+        
+        li a {
+            font-size: var(--size-base);
+        }
+    
+        li:nth-child(7) {
+            grid-column: span 2;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .hero__img {
+        img {
+            /* width: 100%; */
+            max-width: 300px;
+            height: 325.9px;
+        }
+    }
+
+    .hero__text {
+
+        h1 {
+            font-size: var(--size-5xl);
+        }
+    }
+
+    .hero__description {
+        p {
+            font-size: var(--size-sm);
+        }
+    }
+
+    .container {
+        padding: 3em 4em;
+    }
+
+    .project__text {
+        h2 {
+            font-size: var(--size-4xl);
+        }
+    }
+
+    .home__arrow {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .container {
+        padding: 3em 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__img {
+
+        img {
+            max-width: 200px;
+            height: 225.9px;
+        }
+    }
+
+    .hero__img {
+        margin-left: 3em;
+    }
+
+    .project__text {
+        h2 {
+            font-size: var(--size-3xl);
+        }
+    }
+
+    .hero__text {
+
+        h1 {
+            font-size: var(--size-4xl);
+        }
+    }
+
+    .hero__description {
+        p {
+            font-size: var(--size-xs);
+        }
+    }
+
+    .project__list {
+        grid-template-columns: 1fr;
+        
+        li a {
+            font-size: var(--size-base);
+        }
+    
+        li:nth-child(7) {
+            grid-column: span 1;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project__text {
+        h2 {
+            font-size: var(--size-2xl);
+        }
+    }
+
+    .hero__text {
+
+        h1 {
+            font-size: var(--size-3xl);
+        }
+    }
+
+    .hero__description {
+        p {
+            font-size: var(--size-xxs);
+        }
+    }
+
+    .project__list {
+        grid-template-columns: 1fr;
+        
+        li a {
+            font-size: var(--size-xs);
+        }
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero__img {
+
+        img {
+            max-width: 150px;
+            height: 200px;
+        }
+    }
+
+    .hero__container {
+        gap: 2em;
+    }
+
+    .hero__text {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 1em;
+    }
+
+    .container {
+        padding: 2em 1em;
+    }
+
+    .home__arrow {
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .hero__text {
+        flex-direction: column;
+    }
 }
