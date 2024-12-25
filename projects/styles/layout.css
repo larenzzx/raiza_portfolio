@@ -93,7 +93,6 @@ h3 {
 
 .photo__img:nth-child(1),
 .photo__img:nth-child(3) {
-    /* width: 400px; */
     height: 300px;
     object-fit: cover;
 }
@@ -107,7 +106,6 @@ h3 {
         gap: 1em;
     
         .poster__img {
-            /* width: 100%; */
             width: 500px;
         }
     
@@ -154,12 +152,12 @@ h3 {
     .poster {
 
         .poster__img {
-            width: 400px;
+            width: 100%;
         }
 
-        /* .graphic__img {
-            width: 350px;
-        } */
+        .graphic__img {
+            width: 100%;
+        }
 
         .poster__title {
             font-size: var(--size-xl);
@@ -169,11 +167,11 @@ h3 {
     .layouts {
 
         .brochure__img {
-            width: 300px;
+            width: 100%;
         }
 
         .advocacy__img {
-            width: 400px;
+            width: 100%;
         }
 
         .brochure__title,
@@ -192,32 +190,7 @@ h3 {
 
     .photo__img:nth-child(1),
     .photo__img:nth-child(3) {
-        /* width: 400px; */
         height: auto;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .poster {
-
-        .poster__img {
-            width: 300px;
-        }
-
-        .graphic__img {
-            width: 250px;
-        }
-    }
-
-    .layouts {
-
-        .brochure__img {
-            width: 200px;
-        }
-
-        .advocacy__img {
-            width: 300px;
-        }
     }
 }
 
@@ -231,10 +204,6 @@ h3 {
 
     .layouts {
 
-        .advocacy__img {
-            width: 300px;
-        }
-
         .brochure__title,
         .advocacy__title {
             font-size: var(--size-lg);
@@ -245,28 +214,12 @@ h3 {
 @media screen and (max-width: 460px) {
     .poster {
 
-        .poster__img {
-            width: 200px;
-        }
-
-        .graphic__img {
-            width: 250px;
-        }
-
         .poster__title {
             font-size: var(--size-base);
         }
     }
 
     .layouts {
-
-        .brochure__img {
-            width: 200px;
-        }
-
-        .advocacy__img {
-            width: 200px;
-        }
 
         .brochure__title,
         .advocacy__title {
@@ -282,13 +235,6 @@ h3 {
 
     .poster {
 
-        .poster__img {
-            width: 150px;
-        }
-
-        .graphic__img {
-            width: 150px;
-        }
 
         .poster__title {
             font-size: var(--size-sm);
@@ -296,14 +242,6 @@ h3 {
     }
 
     .layouts {
-
-        .brochure__img {
-            width: 150px;
-        }
-
-        .advocacy__img {
-            width: 150px;
-        }
 
         .brochure__title,
         .advocacy__title {
@@ -330,26 +268,7 @@ h3 {
         font-size: var(--size-lg);
     }
 
-    .poster {
-
-        .poster__img {
-            width: 120px;
-        }
-
-        /* .graphic__img {
-            width: 350px;
-        } */
-    }
-
     .layouts {
-
-        .brochure__img {
-            width: 120px;
-        }
-
-        .advocacy__img {
-            width: 120px;
-        }
 
         .brochure__title,
         .advocacy__title {
